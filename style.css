@@ -87,12 +87,6 @@ main {
   margin: 12px 0 0;
 }
 
-.badge.coming-soon {
-  background: var(--bg-wash);
-  color: var(--text-secondary);
-  cursor: default;
-}
-
 .play-badge {
   display: inline-flex;
   align-items: center;
@@ -100,6 +94,18 @@ main {
 
 .play-badge img {
   height: 56px;
+  width: auto;
+}
+
+/* The Play PNG has ~15% transparent padding baked in; Apple's SVG has none,
+   so 38px here matches the Play badge's visible height. */
+.app-store-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.app-store-badge img {
+  height: 38px;
   width: auto;
 }
 
