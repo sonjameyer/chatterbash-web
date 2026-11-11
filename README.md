@@ -14,9 +14,12 @@ This is a plain static site: no build step, no dependencies.
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Landing page: game overview, the three rounds, store links |
-| `privacy.html` | Privacy policy (linked from the app store listings) |
-| `style.css` | Shared stylesheet for both pages |
+| `index.html` | Download page (home): store badges and game overview |
+| `how-to-play.html` | Setup, the three rounds, scoring, and tips |
+| `game-nights.html` | Game nights at home, and the host guide for venues (pubs, restaurants) |
+| `downloads/chatterbash-game-night.pptx` | Free Game Night slide deck for venue hosts, linked from `game-nights.html` |
+| `privacy.html` | Privacy policy (linked from the app store listings, so keep this URL) |
+| `style.css` | Shared stylesheet for all pages |
 | `logo.png`, `favicon.png`, `apple-touch-icon.png` | Branding and icons |
 | `google-play-badge.png`, `app-store-badge.svg` | Store badges |
 | `CNAME` | Custom domain for GitHub Pages |
@@ -40,6 +43,10 @@ When you change `style.css`, bump the cache-buster query string in the
 `<link rel="stylesheet" href="style.css?v=N">` tag in each HTML page so
 visitors pick up the new styles.
 
+Every page shares the same top navigation bar and footer (social links,
+copyright, contact email). There's no templating, so if you change either one,
+update it in all four HTML files.
+
 ## Contact
 
-Bouncy Wizard · [bouncywizardapps@gmail.com](mailto:bouncywizardapps@gmail.com)
+Bouncy Wizard · [info@bouncywizard.com](mailto:info@bouncywizard.com)
